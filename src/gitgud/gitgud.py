@@ -21,9 +21,7 @@ class git(object):
         args = git.parse_args("good")
         name = args.name or "You"
         sup = args.super
-        text = "{name} {verb} now {qual} gud!".format(name=name,
-                                                      verb="is" if args.name else "are",
-                                                      qual="super" if sup else "so")
+        text = "{name} now {qual} best!".format(name=name, qual="super" if sup else "so")
         if sup:
             text = git.fig(text)
         print(text)
